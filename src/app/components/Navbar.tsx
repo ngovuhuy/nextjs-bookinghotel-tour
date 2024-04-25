@@ -15,26 +15,26 @@ const Navbar = () => {
     <header className='bg-background'>
      <div className="container pt-4 ">
       <div className="nav row pb-3">
-        <div className="col-5">
-          <a href="#" className='text-blackish no-underline text-2xl'>Trek Booking</a>
+        <div className="col-5 text-center ">
+          <a href="#" className='text-blackish no-underline text-2xl lg:mr-44 font-bold '>Trek Booking</a>
         </div>
         <div className="col-7 hidden lg:block ">
           <ul className='flex no-underline justify-around'>
-            <li className='flex'>
-      <img src="globe.png" alt="" className='pr-2 '/>
-              <a className='no-underline text-accent'  href="">
+            <li className='flex hover-bold'>
+      <img style={{width:"30px",height:"25px"}} src="globe.png" alt="" className='pr-2 '/>
+              <a className='no-underline text-accent font-bold'  href="">
               EN/VI</a></li>
-            <li className='flex'>
-              <img src="cart.png" alt="" className='pr-2'/>
-              <a className='no-underline text-accent' href="">Cart(1)</a>
+            <li className='flex hover-bold'>
+              <img style={{width:"30px",height:"25px"}} src="cart.png" alt="" className='pr-2'/>
+              <a className='no-underline text-accent font-bold' href="">Cart(1)</a>
               </li>
-            <li className='flex'>
-            <img src="bell.png" alt="" className='pr-2'/>
-              <a className='no-underline text-accent' href="">Notification</a>
+            <li className='flex hover-bold'>
+            <img style={{width:"30px",height:"25px"}} src="bell.png" alt="" className='pr-2'/>
+              <a className='no-underline text-accent font-bold' href="">Notification</a>
               </li>
-            <li className='flex'>
-            <img src="users.png" alt="" className='pr-2'/>
-              <a className='no-underline text-accent' href="">Log In/ Sign up</a>
+            <li className='flex hover-bold'>
+            <img style={{width:"30px",height:"25px"}} src="users.png" alt="" className='pr-2'/>
+              <a className='no-underline text-accent font-bold' href="">Log In/ Sign up</a>
               </li>
           </ul>
           </div>
@@ -42,17 +42,17 @@ const Navbar = () => {
           <CiMenuBurger style={{float:"right",fontSize:"22px",}}/>
           </div>
           {showSubMenu && (
-        <div className="sub-menu-mobi flex justify-center ">
+        <div className="sub-menu-mobi flex justify-center pt-4">
        <ul className='lg:hidden'>
-        <li  className='flex pb-4'>
+        <li  className='flex pb-4 hover-bold'>
         <img src="cart.png" alt="" className='pr-2'/>
-          <a href="">Cart</a></li>
-        <li className='flex pb-4'>
+          <a href="" className='font-bold'>Cart</a></li>
+        <li className='flex pb-4 hover-bold'>
         <img src="bell.png" alt="" className='pr-2'/>
-          <a href="">Notification</a></li>
-        <li className='flex pb-4'>
+          <a href="" className='font-bold'>Notification</a></li>
+        <li className='flex pb-4 hover-bold'>
         <img src="users.png" alt="" className='pr-2'/>
-          <a href="">Log In/ Sign up</a></li>
+          <a href="" className='font-bold'>Log In/ Sign up</a></li>
       
        </ul>
         </div>
